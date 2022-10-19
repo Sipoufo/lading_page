@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Style -->
+        <link type="text/css" rel="stylesheet" href="./css/style.css" />
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="./vendors/font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <title>Sipoufo</title>
+    </head>
+    <body>
+        <header>
+            <!-- Logo -->
+            <div class="logo">
+                <h4>SDLY</h4>
+            </div>
+
+            <!-- Menu -->
+            <div class="menu">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Experiences</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-button">
+                <i class="fa fa-bars"></i> 
+            </div>
+        </header>
+        <div class="body-items">
+            <!-- Start container -->
+            <div class="container">
+                <!-- Start background -->
+                <div class="grenadeBG">
+                    <img src="./assets/grenadeBG.png" alt="grenadeBG">
+                </div>
+                <div class="grenade">
+                    <img src="./assets/grenade.png" alt="grenadeBG">
+                </div>
+                <!-- End background -->
+                <!-- Start body -->
+                <div class="body">
+                    <!-- Start Right body -->
+                    <div class="right-body">
+                        <div class="header">
+                            <p>00</p>
+                        </div>
+                        <div class="title">
+                            INTRODUCTION
+                        </div>
+                        <div class="body">
+                            A healthy explosion to smoke free explosion. A safe evironment to stay healty and enjoy everyday in a happy and safe manner.
+                        </div>
+                        <div class="footer">
+                            <ul>
+                                <li>01</li>
+                                <li>02</li>
+                                <li>03</li>
+                                <li>04</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Right body -->
+                    <!-- Start Left body -->
+                    <div class="left-body">
+                        <p>Full Stack</p>
+                        <p>Developer</p>
+                    </div>
+                    <!-- End Left body -->
+                </div>
+                <!-- End body -->
+                <!-- Start name -->
+                <div class="name">
+                    SIPOUFO Y.
+                </div>
+                <!-- End name -->
+            </div>
+            <!-- End container -->
+            <!-- Start right bar -->
+            <div class="right-bar">
+                <div class="container">
+                    <div class="top-line"></div>
+                    <div class="social-media">
+                        <i class="fa fa-facebook icon"></i>
+                        <i class="fa fa-linkedin icon"></i>
+                        <i class="fa fa-github icon"></i>
+                    </div>
+                    <div class="bottom-line"></div>
+                </div>
+            </div>
+            <!-- End right bar -->
+        </div>
+
+        <!-- Start About Me -->
+        <div class="aboutMe">
+            <!-- Start description -->
+            <div class="descripition">
+                <div class="title">
+                    <p>01.</p>
+                    <p>Description</p>
+                </div>
+                <div class="body">
+                    Esse aliqua eu dolore ut. Labore ex cillum anim excepteur aliquip. Eu est nulla mollit et ipsum eiusmod ad irure voluptate commodo nostrud velit dolore. Minim adipisicing ut proident dolore duis in aliquip dolor aliquip adipisicing do ad.
+                </div>
+            </div>
+            <!-- End description -->
+            <!-- Start picture -->
+            <div class="picture">
+                <img />
+            </div>
+            <!-- End picture -->
+        </div>
+        <!-- End About Me -->
+        <!-- Script -->
+        <script type="text/javascript">
+            document.addEventListener("mousemove", function(e) {
+                const bgShadow = document.querySelector('.grenadeBG');
+                const bg = document.querySelector('.grenade');
+
+                bg.style.right = bg.offsetWidth/20 - e.pageX*0.15 + 'px';
+                bg.style.bottom = bg.offsetHeight/20 - e.pageY*0.15 + 'px';
+
+                bgShadow.style.right = bg.offsetWidth/20 - e.pageX*0.15 + 'px';
+                bgShadow.style.bottom = bg.offsetHeight/20 - e.pageY*0.15 + 'px';
+                
+            })
+        </script>
+    </body>
+</html>
